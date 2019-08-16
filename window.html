@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			var n1 = "ari";
+			var n2 = "brayden";
+			var n3 = "cleo";
+			var n4 = "isabella";
+			var n5 = "kiriana";
+			var n6 = "mel";
+			var n7 = "sage";
+			var n8 = "mila";
+			var n9 = "rhys";
+			var n10 = "mitchell";
+			var n11 = "sophia";
+			var n12 = "valerye";
+			var n13 = "zhen&sup2;";
+			var n14 = n1;
+			var n15 = n2;
+			var n16 = n3;
+			var n17 = n4;
+			var n18 = n5;
+			var n19 = n6;
+			var n20 = n7;
+			var n21 = n8;
+			var n22 = n9;
+			var n23 = n10;
+			var n24 = n11;
+			var n25 = n12;
+			var n26 = n13;
+			function defac() {
+				var x = document.getElementById("frm1");
+				var name = "";
+				var i;
+				for (i = 0; i < x.length ;i++) {
+					name += x.elements[i].value;
+					name = name.lower;
+				}
+				if (name == n1) {
+					var fac = 1;
+				}
+				if (name == n2) {
+					var fac = 2;
+				}
+				if (name == n3) {
+					var fac = 3;
+				}
+				if (name == n4) {
+					var fac = 4;
+				}
+				if (name == n5) {
+					var fac = 5;
+				}
+				if (name == n6) {
+					var fac = 6;
+				}
+				if (name == n7) {
+					var fac = 7;
+				}
+				if (name == n8) {
+					var fac = 8;
+				}
+				if (name == n9) {
+					var fac = 9;
+				}
+				if (name == n10) {
+					var fac = 10;
+				}
+				if (name == n11) {
+					var fac = 11;
+				}
+				if (name == n12) {
+					var fac = 12;
+				}
+				if (name == n13) {
+					var fac = 13;
+				}
+				else {
+					var fac = "not an option"
+				};
+				document.getElementById("fac").innerHTML = fac;
+			}
+		</script>
+	</head>
+	<body>
+		<form id="frm1" onSubmit="JavaScript:defac()">
+				Facilitator: <input type="text" value="facilitator"><br>
+				<input type="submit" value="Submit">
+		</form>
+		<div id = names></div>
+		<p1 id="fac"></p1>
+		<div id = jobs>tables</div>
+	<body>
+<html>
