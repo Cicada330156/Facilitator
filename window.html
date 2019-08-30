@@ -14,7 +14,7 @@
 			var n10 = "mitchell";
 			var n11 = "sophia";
 			var n12 = "valerye";
-			var n13 = "zhenzhen;";
+			var n13 = "zhen&sup2;";
 			var n14 = n1;
 			var n15 = n2;
 			var n16 = n3;
@@ -28,17 +28,13 @@
 			var n24 = n11;
 			var n25 = n12;
 			var n26 = n13;
+			var i;
 			function defac() {
-				var x = document.getElementById("frm1");
-				var name = "";
-				var i;
-				for (i = 0; i < x.length ;i++) {
-					name += x.elements[i].value;
-					name = name.lower;
-				}
-				if (name == n1) {
+				var name = document.getElementById('frm1');
+				/*var name = mixed_name;
+				if (name == "ari") {
 					var fac = 1;
-				}
+				};
 				if (name == n2) {
 					var fac = 2;
 				}
@@ -77,8 +73,9 @@
 				}
 				else {
 					var fac = "not an option"
-				};
-				document.getElementById("fac").innerHTML = fac;
+				};*/
+				document.getElementById('fac').innerHTML = name;
+				event.preventDefault()
 			}
 		</script>
 	</head>
