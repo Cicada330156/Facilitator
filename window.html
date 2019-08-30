@@ -28,9 +28,9 @@
 			var n24 = n11;
 			var n25 = n12;
 			var n26 = n13;
-			var i;
 			function defac() {
-				var name = document.getElementById('frm1');
+				var text_name = document.getElementById('frm1');
+				var name = text_name.value;
 				/*var name = mixed_name;
 				if (name == "ari") {
 					var fac = 1;
@@ -74,7 +74,8 @@
 				else {
 					var fac = "not an option"
 				};*/
-				document.getElementById('fac').innerHTML = name;
+				var facfield = document.getElementById('fac');
+				facfield.value = "name";
 				event.preventDefault()
 			}
 		</script>
